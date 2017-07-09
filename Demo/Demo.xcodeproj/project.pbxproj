@@ -12,6 +12,9 @@
 		211618391F11C9C200BAFBEE /* wonderWoman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 211618361F11C9C200BAFBEE /* wonderWoman.jpg */; };
 		212C62CE1F11C5D60071A9AD /* batman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 212C62CC1F11C5D60071A9AD /* batman.jpg */; };
 		212C62CF1F11C5D60071A9AD /* chicken.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 212C62CD1F11C5D60071A9AD /* chicken.jpg */; };
+		2136C3B11F122F1E00DF6157 /* joker.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2136C3B01F122F1E00DF6157 /* joker.jpg */; };
+		2136C3B31F1232C900DF6157 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 2136C3B21F1232C900DF6157 /* menu.png */; };
+		2136C3B51F1233B900DF6157 /* Recommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2136C3B41F1233B800DF6157 /* Recommendation.swift */; };
 		2172DEEF1F11C12000E24B47 /* batman_chat_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2172DEEE1F11C12000E24B47 /* batman_chat_bg.png */; };
 		217C27CB1F117AE700C22D23 /* frame_0_delay-0.06s.gif in Resources */ = {isa = PBXBuildFile; fileRef = 217C27B21F117AE700C22D23 /* frame_0_delay-0.06s.gif */; };
 		217C27CC1F117AE700C22D23 /* frame_10_delay-0.06s.gif in Resources */ = {isa = PBXBuildFile; fileRef = 217C27B31F117AE700C22D23 /* frame_10_delay-0.06s.gif */; };
@@ -97,6 +100,9 @@
 		211618361F11C9C200BAFBEE /* wonderWoman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wonderWoman.jpg; sourceTree = "<group>"; };
 		212C62CC1F11C5D60071A9AD /* batman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = batman.jpg; sourceTree = "<group>"; };
 		212C62CD1F11C5D60071A9AD /* chicken.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chicken.jpg; sourceTree = "<group>"; };
+		2136C3B01F122F1E00DF6157 /* joker.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = joker.jpg; sourceTree = "<group>"; };
+		2136C3B21F1232C900DF6157 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		2136C3B41F1233B800DF6157 /* Recommendation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recommendation.swift; sourceTree = "<group>"; };
 		2172DEEE1F11C12000E24B47 /* batman_chat_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batman_chat_bg.png; sourceTree = "<group>"; };
 		217C27B21F117AE700C22D23 /* frame_0_delay-0.06s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "frame_0_delay-0.06s.gif"; sourceTree = "<group>"; };
 		217C27B31F117AE700C22D23 /* frame_10_delay-0.06s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "frame_10_delay-0.06s.gif"; sourceTree = "<group>"; };
@@ -174,6 +180,8 @@
 		217C27B11F117AE700C22D23 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				2136C3B21F1232C900DF6157 /* menu.png */,
+				2136C3B01F122F1E00DF6157 /* joker.jpg */,
 				211618341F11C9C200BAFBEE /* batman_movie.jpg */,
 				211618351F11C9C200BAFBEE /* transformers.jpg */,
 				211618361F11C9C200BAFBEE /* wonderWoman.jpg */,
@@ -242,6 +250,7 @@
 				21FCC14C1F10A964006B566F /* AppDelegate.swift */,
 				21FCC14E1F10A964006B566F /* ViewController.swift */,
 				21E4C8FD1F11EDB600D780F7 /* TrailerPlayer.swift */,
+				2136C3B41F1233B800DF6157 /* Recommendation.swift */,
 				217C27E81F118B1700C22D23 /* SelectPage.swift */,
 				21F5FA841F117A9C00281835 /* Explosion.swift */,
 				21FCC1561F10A964006B566F /* Assets.xcassets */,
@@ -362,6 +371,7 @@
 				217C27CD1F117AE700C22D23 /* frame_11_delay-0.06s.gif in Resources */,
 				211618371F11C9C200BAFBEE /* batman_movie.jpg in Resources */,
 				217C27E11F117AE700C22D23 /* frame_7_delay-0.06s.gif in Resources */,
+				2136C3B31F1232C900DF6157 /* menu.png in Resources */,
 				217C27DC1F117AE700C22D23 /* frame_2_delay-0.06s.gif in Resources */,
 				217C27E31F117AE700C22D23 /* frame_9_delay-0.06s.gif in Resources */,
 				217C27D71F117AE700C22D23 /* frame_20_delay-0.06s.gif in Resources */,
@@ -379,6 +389,7 @@
 				217C27DA1F117AE700C22D23 /* frame_23_delay-0.06s.gif in Resources */,
 				21FCC1521F10A964006B566F /* Main.storyboard in Resources */,
 				217C27CF1F117AE700C22D23 /* frame_13_delay-0.06s.gif in Resources */,
+				2136C3B11F122F1E00DF6157 /* joker.jpg in Resources */,
 				217C27CB1F117AE700C22D23 /* frame_0_delay-0.06s.gif in Resources */,
 				211618391F11C9C200BAFBEE /* wonderWoman.jpg in Resources */,
 			);
@@ -445,6 +456,7 @@
 				359E181B1F11AA8400D59681 /* ApiUtil.swift in Sources */,
 				21F5FA851F117A9C00281835 /* Explosion.swift in Sources */,
 				21FCC14F1F10A964006B566F /* ViewController.swift in Sources */,
+				2136C3B51F1233B900DF6157 /* Recommendation.swift in Sources */,
 				21FCC16C1F10BB84006B566F /* NavTable.swift in Sources */,
 				21FCC14D1F10A964006B566F /* AppDelegate.swift in Sources */,
 				21FCC1641F10A97A006B566F /* SWRevealViewController.m in Sources */,

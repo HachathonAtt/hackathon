@@ -26,7 +26,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="HomePage" prompt=" " id="uWn-yM-iza">
-                                        <barButtonItem key="leftBarButtonItem" title="Open" id="Cus-kl-1jf"/>
+                                        <barButtonItem key="leftBarButtonItem" image="menu.png" id="Cus-kl-1jf"/>
                                         <barButtonItem key="rightBarButtonItem" title="Record" id="fh2-rY-bc5">
                                             <connections>
                                                 <action selector="recordItemPressed:" destination="WZx-Vj-ly5" id="Cl9-tP-AOn"/>
@@ -64,6 +64,7 @@
                         <outlet property="poster" destination="XJx-Vq-UBO" id="aXb-rJ-m9o"/>
                         <outlet property="robot" destination="VE9-yz-Dta" id="b0y-OA-VdJ"/>
                         <segue destination="w2j-Ax-JZE" kind="show" identifier="trailer" id="BtY-cF-jTb"/>
+                        <segue destination="Wx4-6S-WE9" kind="show" identifier="reco" id="8Ps-KB-vO8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJa-ex-BKb" sceneMemberID="firstResponder"/>
@@ -110,7 +111,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fkh-f0-Sgw">
                                 <rect key="frame" x="0.0" y="493" width="375" height="174"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="robot.JPG"/>
+                                <state key="normal" title="Button" image="joker.jpg"/>
                                 <connections>
                                     <action selector="thirdImg:" destination="W1E-6E-4jL" eventType="touchUpInside" id="nMX-i2-mtb"/>
                                     <segue destination="jvR-Vk-WvX" kind="show" id="xpO-vX-Mcx"/>
@@ -200,7 +201,70 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LsS-LT-EOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-631.20000000000005" y="-1629.5352323838083"/>
+            <point key="canvasLocation" x="-631" y="-1884"/>
+        </scene>
+        <!--Recommendation-->
+        <scene sceneID="dHU-Z1-kW3">
+            <objects>
+                <viewController id="Wx4-6S-WE9" customClass="Recommendation" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OKm-TM-Um9"/>
+                        <viewControllerLayoutGuide type="bottom" id="RbH-ac-iWY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vmp-1P-5RC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gg8-GC-YxP">
+                                <rect key="frame" x="0.0" y="-10" width="375" height="74"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Recommendation" prompt=" " id="dsI-p4-k6l">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="e7K-dU-g9P">
+                                            <connections>
+                                                <segue destination="WZx-Vj-ly5" kind="show" id="wYy-Ph-dYl"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kg-DD-lqh">
+                                <rect key="frame" x="0.0" y="64" width="375" height="202"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="chicken.jpg"/>
+                                <connections>
+                                    <action selector="firstClick:" destination="Wx4-6S-WE9" eventType="touchUpInside" id="bQy-1b-tg7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byf-Uz-4Lf">
+                                <rect key="frame" x="0.0" y="267" width="375" height="202"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="chicken.jpg"/>
+                                <connections>
+                                    <action selector="secondClick:" destination="Wx4-6S-WE9" eventType="touchUpInside" id="HZl-ef-Jka"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0f-dw-O2l">
+                                <rect key="frame" x="0.0" y="469" width="375" height="202"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="chicken.jpg"/>
+                                <connections>
+                                    <action selector="thirdClick:" destination="Wx4-6S-WE9" eventType="touchUpInside" id="R2g-TP-REb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="first" destination="2kg-DD-lqh" id="Tfs-bx-aQF"/>
+                        <outlet property="second" destination="byf-Uz-4Lf" id="ZjE-gW-GRT"/>
+                        <outlet property="third" destination="B0f-dw-O2l" id="SlV-t3-XBi"/>
+                        <segue destination="w2j-Ax-JZE" kind="show" identifier="recommendTrailer" id="f0g-tp-lEP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qjv-CH-8Lz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="729" y="-1884"/>
         </scene>
         <!--Trailer Player-->
         <scene sceneID="7pY-Av-9hh">
@@ -214,16 +278,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CSD-i2-7C3" customClass="YouTubePlayerView" customModule="YouTubePlayer">
-                                <rect key="frame" x="0.0" y="134" width="375" height="227"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ipn-xo-B9P">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="-2" width="375" height="74"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="tOk-Be-dNJ">
+                                    <navigationItem title="Title" prompt=" " id="tOk-Be-dNJ">
                                         <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="E5z-ag-1E2">
                                             <connections>
                                                 <segue destination="WZx-Vj-ly5" kind="show" id="Pre-qM-Q68"/>
@@ -232,43 +291,29 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mnl-oC-ZlX">
+                                <rect key="frame" x="16" y="307" width="343" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.92777209215417156" green="0.93695795445272767" blue="0.93695795445272767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CSD-i2-7C3" customClass="YouTubePlayerView" customModule="YouTubePlayer">
+                                <rect key="frame" x="0.0" y="72" width="375" height="227"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="des" destination="Mnl-oC-ZlX" id="x1V-Tl-bdH"/>
                         <outlet property="videoView" destination="CSD-i2-7C3" id="ZIU-vW-NhN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dPz-DN-fV1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="988" y="-1466.7166416791606"/>
-        </scene>
-        <!--Explosion-->
-        <scene sceneID="aQt-Yc-Trp">
-            <objects>
-                <viewController id="whh-hb-fzp" customClass="Explosion" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="90Y-eO-iEV"/>
-                        <viewControllerLayoutGuide type="bottom" id="kBH-r4-e3J"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="yjh-7e-Bdn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frame_0_delay-0.06s.gif" translatesAutoresizingMaskIntoConstraints="NO" id="aMu-VP-4Ju">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="explosion" destination="aMu-VP-4Ju" id="m60-LS-gEB"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="V0a-OW-sUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="988" y="-752"/>
+            <point key="canvasLocation" x="1785" y="-1345"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="UL0-uh-Fm7">
@@ -291,17 +336,19 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ynU-wf-1uo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1428" y="-955"/>
+            <point key="canvasLocation" x="-1417" y="-1167"/>
         </scene>
     </scenes>
     <resources>
         <image name="batman.jpg" width="1358" height="588"/>
         <image name="chicken.jpg" width="640" height="640"/>
         <image name="frame_0_delay-0.06s.gif" width="400" height="400"/>
-        <image name="robot.JPG" width="1280" height="680"/>
+        <image name="joker.jpg" width="800" height="480"/>
+        <image name="menu.png" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="xpO-vX-Mcx"/>
-        <segue reference="Pre-qM-Q68"/>
+        <segue reference="wYy-Ph-dYl"/>
+        <segue reference="f0g-tp-lEP"/>
     </inferredMetricsTieBreakers>
 </document>

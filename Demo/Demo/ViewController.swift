@@ -80,7 +80,6 @@ class ViewController: UIViewController {
                 Alamofire.request("http://10.64.3.5:8888/search/batman").responseJSON { response in
                     
                     if let resultValue = response.result.value {
-                        
                         let jsonRes = JSON(resultValue)
                         if let url = NSURL(string: jsonRes["img_link"].rawString()!){
                             if let data = NSData(contentsOf: url as URL){
@@ -88,7 +87,8 @@ class ViewController: UIViewController {
                             }
                         }
                         MyGlobal.movieTrailer = jsonRes["trailer_link"].rawString()!
-                        
+                        MyGlobal.movieDes = jsonRes["overview"].rawString()!
+                        ApiUtil.textToSpeech(MyGlobal.movieDes)
                         self.poster.isHidden = false
                     }
                     
@@ -97,9 +97,7 @@ class ViewController: UIViewController {
                 
             else if isFinal && text.contains("Superman"){
                 Alamofire.request("http://10.64.3.5:8888/search/superman").responseJSON { response in
-                    
                     if let resultValue = response.result.value {
-                        
                         let jsonRes = JSON(resultValue)
                         if let url = NSURL(string: jsonRes["img_link"].rawString()!){
                             if let data = NSData(contentsOf: url as URL){
@@ -107,13 +105,37 @@ class ViewController: UIViewController {
                             }
                         }
                         MyGlobal.movieTrailer = jsonRes["trailer_link"].rawString()!
-                        
+                        MyGlobal.movieDes = jsonRes["overview"].rawString()!
+                        ApiUtil.textToSpeech(MyGlobal.movieDes)
                         self.poster.isHidden = false
                     }
                     
                 }
             }
             
+            
+            else if isFinal && text.contains("recommendation"){
+                ApiUtil.textToSpeech("Yes, what kind of movies do you like")
+            }
+            
+            else if isFinal && text.contains("action movie"){
+                MyGlobal.recommendation = "action"
+                self.performSegue(withIdentifier: "reco", sender: self)
+            }
+                
+            else if isFinal && text.contains("animation movie"){
+                MyGlobal.recommendation = "animation"
+                self.performSegue(withIdentifier: "reco", sender: self)
+            }
+            
+            else if isFinal && text.contains("family movie"){
+                MyGlobal.recommendation = "family"
+                self.performSegue(withIdentifier: "reco", sender: self)
+            }
+
+            else if isFinal && text.contains("stupid"){
+                ApiUtil.textToSpeech("Don't blame me, I'm a baby robot")
+            }
                 
             else{
                 if isFinal{
@@ -146,7 +168,7 @@ class ViewController: UIViewController {
                             usingSpringWithDamping: 0.67,
                             initialSpringVelocity: 0.1,
                             options: [], animations: {
-                                self.robot.center.y -= 400
+                                self.robot.center.y -= 300
                                 ApiUtil.textToSpeech("Welcome to our app, I'm batman")
         },completion:nil)
     }

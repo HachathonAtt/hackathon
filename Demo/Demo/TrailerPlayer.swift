@@ -11,11 +11,14 @@ import YouTubePlayer
 
 class TrailerPlayer: UIViewController {
     @IBOutlet weak var videoView: YouTubePlayerView!
+    @IBOutlet weak var des: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        print("GhBWBrQ01OQ")
         videoView.loadVideoID(MyGlobal.movieTrailer)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "batman_chat_bg.png")!)
+        
+        des.text = MyGlobal.movieDes
         // Do any additional setup after loading the view.
     }
 

@@ -6,7 +6,7 @@
 	<dict>
 		<key>NSExceptionDomains</key>
 		<dict>
-			<key>http://10.64.3.5:8888</key>
+			<key>http://192.168.1.4:8888</key>
 			<string></string>
 		</dict>
 		<key>NSAllowsArbitraryLoads</key>
