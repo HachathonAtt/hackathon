@@ -50,7 +50,41 @@
 		21FCC1641F10A97A006B566F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FCC1631F10A97A006B566F /* SWRevealViewController.m */; };
 		21FCC1681F10B6C4006B566F /* SlideOutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FCC1671F10B6C4006B566F /* SlideOutCell.swift */; };
 		21FCC16C1F10BB84006B566F /* NavTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FCC16B1F10BB84006B566F /* NavTable.swift */; };
+		359E18091F11A89A00D59681 /* ConversationV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359E18051F11A89A00D59681 /* ConversationV1.framework */; };
+		359E180A1F11A89A00D59681 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359E18061F11A89A00D59681 /* RestKit.framework */; };
+		359E180B1F11A89A00D59681 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359E18071F11A89A00D59681 /* SpeechToTextV1.framework */; };
+		359E180C1F11A89A00D59681 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359E18081F11A89A00D59681 /* TextToSpeechV1.framework */; };
+		359E180D1F11A8B400D59681 /* ConversationV1.framework in Resources */ = {isa = PBXBuildFile; fileRef = 359E18051F11A89A00D59681 /* ConversationV1.framework */; };
+		359E180E1F11A8B400D59681 /* RestKit.framework in Resources */ = {isa = PBXBuildFile; fileRef = 359E18061F11A89A00D59681 /* RestKit.framework */; };
+		359E180F1F11A8B400D59681 /* SpeechToTextV1.framework in Resources */ = {isa = PBXBuildFile; fileRef = 359E18071F11A89A00D59681 /* SpeechToTextV1.framework */; };
+		359E18101F11A8B400D59681 /* TextToSpeechV1.framework in Resources */ = {isa = PBXBuildFile; fileRef = 359E18081F11A89A00D59681 /* TextToSpeechV1.framework */; };
+		359E18111F11AA1300D59681 /* ConversationV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359E18051F11A89A00D59681 /* ConversationV1.framework */; };
+		359E18121F11AA1300D59681 /* ConversationV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 359E18051F11A89A00D59681 /* ConversationV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		359E18131F11AA1300D59681 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359E18061F11A89A00D59681 /* RestKit.framework */; };
+		359E18141F11AA1300D59681 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 359E18061F11A89A00D59681 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		359E18151F11AA1300D59681 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359E18071F11A89A00D59681 /* SpeechToTextV1.framework */; };
+		359E18161F11AA1300D59681 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 359E18071F11A89A00D59681 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		359E18171F11AA1300D59681 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359E18081F11A89A00D59681 /* TextToSpeechV1.framework */; };
+		359E18181F11AA1300D59681 /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 359E18081F11A89A00D59681 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		359E181B1F11AA8400D59681 /* ApiUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359E181A1F11AA8400D59681 /* ApiUtil.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		359E18191F11AA1300D59681 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				359E18121F11AA1300D59681 /* ConversationV1.framework in Embed Frameworks */,
+				359E18141F11AA1300D59681 /* RestKit.framework in Embed Frameworks */,
+				359E18161F11AA1300D59681 /* SpeechToTextV1.framework in Embed Frameworks */,
+				359E18181F11AA1300D59681 /* TextToSpeechV1.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		217C27B21F117AE700C22D23 /* frame_0_delay-0.06s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "frame_0_delay-0.06s.gif"; sourceTree = "<group>"; };
@@ -100,6 +134,11 @@
 		21FCC1631F10A97A006B566F /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		21FCC1671F10B6C4006B566F /* SlideOutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideOutCell.swift; path = ../SlideOutCell.swift; sourceTree = "<group>"; };
 		21FCC16B1F10BB84006B566F /* NavTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavTable.swift; path = ../NavTable.swift; sourceTree = "<group>"; };
+		359E18051F11A89A00D59681 /* ConversationV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ConversationV1.framework; path = Frameworks/ConversationV1.framework; sourceTree = "<group>"; };
+		359E18061F11A89A00D59681 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RestKit.framework; path = Frameworks/RestKit.framework; sourceTree = "<group>"; };
+		359E18071F11A89A00D59681 /* SpeechToTextV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechToTextV1.framework; path = Frameworks/SpeechToTextV1.framework; sourceTree = "<group>"; };
+		359E18081F11A89A00D59681 /* TextToSpeechV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextToSpeechV1.framework; path = Frameworks/TextToSpeechV1.framework; sourceTree = "<group>"; };
+		359E181A1F11AA8400D59681 /* ApiUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +146,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				359E18151F11AA1300D59681 /* SpeechToTextV1.framework in Frameworks */,
+				359E18091F11A89A00D59681 /* ConversationV1.framework in Frameworks */,
+				359E180A1F11A89A00D59681 /* RestKit.framework in Frameworks */,
+				359E18171F11AA1300D59681 /* TextToSpeechV1.framework in Frameworks */,
+				359E180B1F11A89A00D59681 /* SpeechToTextV1.framework in Frameworks */,
+				359E180C1F11A89A00D59681 /* TextToSpeechV1.framework in Frameworks */,
+				359E18111F11AA1300D59681 /* ConversationV1.framework in Frameworks */,
+				359E18131F11AA1300D59681 /* RestKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,9 +163,6 @@
 		217C27B11F117AE700C22D23 /* img */ = {
 			isa = PBXGroup;
 			children = (
-				21F5FA791F116E0D00281835 /* chicken.jpg */,
-				217C27EA1F118FE900C22D23 /* batman.jpg */,
-				217C27E61F118A4500C22D23 /* robot.JPG */,
 				217C27F41F119E4200C22D23 /* batman.png */,
 				217C27F21F119DA300C22D23 /* MOOD-load-screen.png */,
 				217C27B21F117AE700C22D23 /* frame_0_delay-0.06s.gif */,
@@ -155,6 +199,7 @@
 			children = (
 				21FCC14B1F10A964006B566F /* Demo */,
 				21FCC14A1F10A964006B566F /* Products */,
+				359E18041F11A6F700D59681 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,6 +215,10 @@
 			isa = PBXGroup;
 			children = (
 				217C27B11F117AE700C22D23 /* img */,
+				21F5FA791F116E0D00281835 /* chicken.jpg */,
+				359E181A1F11AA8400D59681 /* ApiUtil.swift */,
+				217C27EA1F118FE900C22D23 /* batman.jpg */,
+				217C27E61F118A4500C22D23 /* robot.JPG */,
 				21FCC16B1F10BB84006B566F /* NavTable.swift */,
 				21FCC1671F10B6C4006B566F /* SlideOutCell.swift */,
 				21FCC1621F10A97A006B566F /* SWRevealViewController.h */,
@@ -190,6 +239,17 @@
 			path = Demo;
 			sourceTree = "<group>";
 		};
+		359E18041F11A6F700D59681 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				359E18051F11A89A00D59681 /* ConversationV1.framework */,
+				359E18061F11A89A00D59681 /* RestKit.framework */,
+				359E18071F11A89A00D59681 /* SpeechToTextV1.framework */,
+				359E18081F11A89A00D59681 /* TextToSpeechV1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -200,6 +260,7 @@
 				21FCC1451F10A964006B566F /* Sources */,
 				21FCC1461F10A964006B566F /* Frameworks */,
 				21FCC1471F10A964006B566F /* Resources */,
+				359E18191F11AA1300D59681 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -222,7 +283,7 @@
 				TargetAttributes = {
 					21FCC1481F10A964006B566F = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 9RWNVPQH47;
+						DevelopmentTeam = QVLQP2TQKA;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -251,6 +312,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				359E180D1F11A8B400D59681 /* ConversationV1.framework in Resources */,
+				359E180E1F11A8B400D59681 /* RestKit.framework in Resources */,
+				359E180F1F11A8B400D59681 /* SpeechToTextV1.framework in Resources */,
+				359E18101F11A8B400D59681 /* TextToSpeechV1.framework in Resources */,
 				21FCC15A1F10A964006B566F /* LaunchScreen.storyboard in Resources */,
 				217C27D41F117AE700C22D23 /* frame_18_delay-0.06s.gif in Resources */,
 				217C27D91F117AE700C22D23 /* frame_22_delay-0.06s.gif in Resources */,
@@ -297,6 +362,7 @@
 				217C27E91F118B1700C22D23 /* SelectPage.swift in Sources */,
 				217C27F91F11AC8100C22D23 /* MovieView.swift in Sources */,
 				21FCC1551F10A964006B566F /* Demo.xcdatamodeld in Sources */,
+				359E181B1F11AA8400D59681 /* ApiUtil.swift in Sources */,
 				21F5FA851F117A9C00281835 /* Explosion.swift in Sources */,
 				21FCC14F1F10A964006B566F /* ViewController.swift in Sources */,
 				21FCC16C1F10BB84006B566F /* NavTable.swift in Sources */,
@@ -428,7 +494,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 9RWNVPQH47;
+				DEVELOPMENT_TEAM = QVLQP2TQKA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chengyu.Demo;
@@ -445,7 +515,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 9RWNVPQH47;
+				DEVELOPMENT_TEAM = QVLQP2TQKA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chengyu.Demo;
