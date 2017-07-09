@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2172DEEF1F11C12000E24B47 /* batman_chat_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2172DEEE1F11C12000E24B47 /* batman_chat_bg.png */; };
 		217C27CB1F117AE700C22D23 /* frame_0_delay-0.06s.gif in Resources */ = {isa = PBXBuildFile; fileRef = 217C27B21F117AE700C22D23 /* frame_0_delay-0.06s.gif */; };
 		217C27CC1F117AE700C22D23 /* frame_10_delay-0.06s.gif in Resources */ = {isa = PBXBuildFile; fileRef = 217C27B31F117AE700C22D23 /* frame_10_delay-0.06s.gif */; };
 		217C27CD1F117AE700C22D23 /* frame_11_delay-0.06s.gif in Resources */ = {isa = PBXBuildFile; fileRef = 217C27B41F117AE700C22D23 /* frame_11_delay-0.06s.gif */; };
@@ -37,8 +38,6 @@
 		217C27EB1F118FE900C22D23 /* batman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 217C27EA1F118FE900C22D23 /* batman.jpg */; };
 		217C27F31F119DA300C22D23 /* MOOD-load-screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 217C27F21F119DA300C22D23 /* MOOD-load-screen.png */; };
 		217C27F51F119E4200C22D23 /* batman.png in Resources */ = {isa = PBXBuildFile; fileRef = 217C27F41F119E4200C22D23 /* batman.png */; };
-		217C27F91F11AC8100C22D23 /* MovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217C27F81F11AC8100C22D23 /* MovieView.swift */; };
-		217C27FB1F11AD1B00C22D23 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217C27FA1F11AD1B00C22D23 /* MovieCell.swift */; };
 		21F5FA7A1F116E0D00281835 /* chicken.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21F5FA791F116E0D00281835 /* chicken.jpg */; };
 		21F5FA851F117A9C00281835 /* Explosion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F5FA841F117A9C00281835 /* Explosion.swift */; };
 		21FCC14D1F10A964006B566F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FCC14C1F10A964006B566F /* AppDelegate.swift */; };
@@ -87,6 +86,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2172DEEE1F11C12000E24B47 /* batman_chat_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batman_chat_bg.png; sourceTree = "<group>"; };
 		217C27B21F117AE700C22D23 /* frame_0_delay-0.06s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "frame_0_delay-0.06s.gif"; sourceTree = "<group>"; };
 		217C27B31F117AE700C22D23 /* frame_10_delay-0.06s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "frame_10_delay-0.06s.gif"; sourceTree = "<group>"; };
 		217C27B41F117AE700C22D23 /* frame_11_delay-0.06s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "frame_11_delay-0.06s.gif"; sourceTree = "<group>"; };
@@ -117,8 +117,6 @@
 		217C27EA1F118FE900C22D23 /* batman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = batman.jpg; path = ../batman.jpg; sourceTree = "<group>"; };
 		217C27F21F119DA300C22D23 /* MOOD-load-screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOOD-load-screen.png"; sourceTree = "<group>"; };
 		217C27F41F119E4200C22D23 /* batman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batman.png; sourceTree = "<group>"; };
-		217C27F81F11AC8100C22D23 /* MovieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieView.swift; path = ../MovieView.swift; sourceTree = "<group>"; };
-		217C27FA1F11AD1B00C22D23 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieCell.swift; path = ../MovieCell.swift; sourceTree = "<group>"; };
 		21F5FA791F116E0D00281835 /* chicken.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = chicken.jpg; path = ../chicken.jpg; sourceTree = "<group>"; };
 		21F5FA841F117A9C00281835 /* Explosion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Explosion.swift; sourceTree = "<group>"; };
 		21FCC1491F10A964006B566F /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +161,10 @@
 		217C27B11F117AE700C22D23 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				2172DEEE1F11C12000E24B47 /* batman_chat_bg.png */,
+				21F5FA791F116E0D00281835 /* chicken.jpg */,
+				217C27EA1F118FE900C22D23 /* batman.jpg */,
+				217C27E61F118A4500C22D23 /* robot.JPG */,
 				217C27F41F119E4200C22D23 /* batman.png */,
 				217C27F21F119DA300C22D23 /* MOOD-load-screen.png */,
 				217C27B21F117AE700C22D23 /* frame_0_delay-0.06s.gif */,
@@ -227,8 +229,6 @@
 				21FCC14E1F10A964006B566F /* ViewController.swift */,
 				217C27E81F118B1700C22D23 /* SelectPage.swift */,
 				21F5FA841F117A9C00281835 /* Explosion.swift */,
-				217C27F81F11AC8100C22D23 /* MovieView.swift */,
-				217C27FA1F11AD1B00C22D23 /* MovieCell.swift */,
 				21FCC1561F10A964006B566F /* Assets.xcassets */,
 				21FCC1501F10A964006B566F /* Main.storyboard */,
 				21FCC1581F10A964006B566F /* LaunchScreen.storyboard */,
@@ -341,6 +341,7 @@
 				217C27D31F117AE700C22D23 /* frame_17_delay-0.06s.gif in Resources */,
 				217C27DF1F117AE700C22D23 /* frame_5_delay-0.06s.gif in Resources */,
 				217C27DB1F117AE700C22D23 /* frame_24_delay-0.06s.gif in Resources */,
+				2172DEEF1F11C12000E24B47 /* batman_chat_bg.png in Resources */,
 				21FCC1571F10A964006B566F /* Assets.xcassets in Resources */,
 				217C27E01F117AE700C22D23 /* frame_6_delay-0.06s.gif in Resources */,
 				217C27D11F117AE700C22D23 /* frame_15_delay-0.06s.gif in Resources */,
@@ -360,7 +361,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				217C27E91F118B1700C22D23 /* SelectPage.swift in Sources */,
-				217C27F91F11AC8100C22D23 /* MovieView.swift in Sources */,
 				21FCC1551F10A964006B566F /* Demo.xcdatamodeld in Sources */,
 				359E181B1F11AA8400D59681 /* ApiUtil.swift in Sources */,
 				21F5FA851F117A9C00281835 /* Explosion.swift in Sources */,
@@ -368,7 +368,6 @@
 				21FCC16C1F10BB84006B566F /* NavTable.swift in Sources */,
 				21FCC14D1F10A964006B566F /* AppDelegate.swift in Sources */,
 				21FCC1641F10A97A006B566F /* SWRevealViewController.m in Sources */,
-				217C27FB1F11AD1B00C22D23 /* MovieCell.swift in Sources */,
 				21FCC1681F10B6C4006B566F /* SlideOutCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
