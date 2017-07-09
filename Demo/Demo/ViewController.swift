@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "batman_chat_bg.png")!)
+        
         robot.image = UIImage(named: MyGlobal.selectedImg)
         self.navigationController?.isNavigationBarHidden = true;
         if self.revealViewController() != nil {
