@@ -7,12 +7,47 @@
 //
 
 import UIKit
+import SpeechToTextV1
+import AVFoundation
 
 class ViewController: UIViewController {
+    // Watson Speech to Text Variables
+    private var stt: SpeechToText?
+    private var recorder: AVAudioRecorder?
+    private var isStreamingDefault = false
+    private var stopStreamingDefault: ((Void) -> Void)? = nil
+    private var isStreamingCustom = false
+    private var stopStreamingCustom: ((Void) -> Void)? = nil
+    private var captureSession: AVCaptureSession? = nil
+    
 
     @IBOutlet weak var robot: UIImageView!
     @IBOutlet weak var open: UIBarButtonItem!
     
+    @IBAction func recordItemPressed(_ sender: Any) {
+        NSLog("record item menu pressed")
+        startStreaming()
+    }
+    private func startStreaming() {
+        var settings = RecognitionSettings(contentType: .opus)
+        settings.continuous = false
+        settings.interimResults = true
+        
+        // ensure SpeechToText service is up
+        guard let stt = stt else {
+            print("SpeechToText not properly set up.")
+            return
+        }
+        let failure = { (error: Error) in print(error) }
+        stt.recognizeMicrophone(settings: settings, failure: failure) { results in
+            NSLog("recognized: " + results.bestTranscript)
+//            self.inputToolbar.contentView.textView.text = results.bestTranscript
+//            self.sendButton.isEnabled = true
+            stt.stopRecognizeMicrophone()
+//            self.microphoneButton.isEnabled = true
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -25,12 +60,16 @@ class ViewController: UIViewController {
             open.action = #selector(SWRevealViewController.revealToggle(_:))
             view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         }
+        let user = "ee02e3e5-3eb2-465a-8950-d0554d5c0d38"
+        let password = "FBQSTGVRKLrK"
+        stt = SpeechToText(username: user, password: password)
         
         UIImageView.animate(withDuration: 2, delay: 0.5,
                             usingSpringWithDamping: 0.67,
                             initialSpringVelocity: 0.1,
                             options: [], animations: {
             self.robot.center.y -= 400
+            ApiUtil.textToSpeech("Welcome to our app")
         },completion:nil)
     }
 
