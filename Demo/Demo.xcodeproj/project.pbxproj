@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2172DEEF1F11C12000E24B47 /* batman_chat_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2172DEEE1F11C12000E24B47 /* batman_chat_bg.png */; };
+		2172DEF21F11C38A00E24B47 /* batman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2172DEF01F11C38A00E24B47 /* batman.jpg */; };
+		2172DEF31F11C38A00E24B47 /* chicken.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2172DEF11F11C38A00E24B47 /* chicken.jpg */; };
+		2172DEF51F11C47300E24B47 /* MoviewShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2172DEF41F11C47300E24B47 /* MoviewShow.swift */; };
 		217C27CB1F117AE700C22D23 /* frame_0_delay-0.06s.gif in Resources */ = {isa = PBXBuildFile; fileRef = 217C27B21F117AE700C22D23 /* frame_0_delay-0.06s.gif */; };
 		217C27CC1F117AE700C22D23 /* frame_10_delay-0.06s.gif in Resources */ = {isa = PBXBuildFile; fileRef = 217C27B31F117AE700C22D23 /* frame_10_delay-0.06s.gif */; };
 		217C27CD1F117AE700C22D23 /* frame_11_delay-0.06s.gif in Resources */ = {isa = PBXBuildFile; fileRef = 217C27B41F117AE700C22D23 /* frame_11_delay-0.06s.gif */; };
@@ -35,10 +38,8 @@
 		217C27E31F117AE700C22D23 /* frame_9_delay-0.06s.gif in Resources */ = {isa = PBXBuildFile; fileRef = 217C27CA1F117AE700C22D23 /* frame_9_delay-0.06s.gif */; };
 		217C27E71F118A4500C22D23 /* robot.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 217C27E61F118A4500C22D23 /* robot.JPG */; };
 		217C27E91F118B1700C22D23 /* SelectPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217C27E81F118B1700C22D23 /* SelectPage.swift */; };
-		217C27EB1F118FE900C22D23 /* batman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 217C27EA1F118FE900C22D23 /* batman.jpg */; };
 		217C27F31F119DA300C22D23 /* MOOD-load-screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 217C27F21F119DA300C22D23 /* MOOD-load-screen.png */; };
 		217C27F51F119E4200C22D23 /* batman.png in Resources */ = {isa = PBXBuildFile; fileRef = 217C27F41F119E4200C22D23 /* batman.png */; };
-		21F5FA7A1F116E0D00281835 /* chicken.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21F5FA791F116E0D00281835 /* chicken.jpg */; };
 		21F5FA851F117A9C00281835 /* Explosion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F5FA841F117A9C00281835 /* Explosion.swift */; };
 		21FCC14D1F10A964006B566F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FCC14C1F10A964006B566F /* AppDelegate.swift */; };
 		21FCC14F1F10A964006B566F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FCC14E1F10A964006B566F /* ViewController.swift */; };
@@ -53,6 +54,9 @@
 
 /* Begin PBXFileReference section */
 		2172DEEE1F11C12000E24B47 /* batman_chat_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batman_chat_bg.png; sourceTree = "<group>"; };
+		2172DEF01F11C38A00E24B47 /* batman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = batman.jpg; sourceTree = "<group>"; };
+		2172DEF11F11C38A00E24B47 /* chicken.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chicken.jpg; sourceTree = "<group>"; };
+		2172DEF41F11C47300E24B47 /* MoviewShow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviewShow.swift; sourceTree = "<group>"; };
 		217C27B21F117AE700C22D23 /* frame_0_delay-0.06s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "frame_0_delay-0.06s.gif"; sourceTree = "<group>"; };
 		217C27B31F117AE700C22D23 /* frame_10_delay-0.06s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "frame_10_delay-0.06s.gif"; sourceTree = "<group>"; };
 		217C27B41F117AE700C22D23 /* frame_11_delay-0.06s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "frame_11_delay-0.06s.gif"; sourceTree = "<group>"; };
@@ -80,10 +84,8 @@
 		217C27CA1F117AE700C22D23 /* frame_9_delay-0.06s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "frame_9_delay-0.06s.gif"; sourceTree = "<group>"; };
 		217C27E61F118A4500C22D23 /* robot.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = robot.JPG; path = ../robot.JPG; sourceTree = "<group>"; };
 		217C27E81F118B1700C22D23 /* SelectPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPage.swift; sourceTree = "<group>"; };
-		217C27EA1F118FE900C22D23 /* batman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = batman.jpg; path = ../batman.jpg; sourceTree = "<group>"; };
 		217C27F21F119DA300C22D23 /* MOOD-load-screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOOD-load-screen.png"; sourceTree = "<group>"; };
 		217C27F41F119E4200C22D23 /* batman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batman.png; sourceTree = "<group>"; };
-		21F5FA791F116E0D00281835 /* chicken.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = chicken.jpg; path = ../chicken.jpg; sourceTree = "<group>"; };
 		21F5FA841F117A9C00281835 /* Explosion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Explosion.swift; sourceTree = "<group>"; };
 		21FCC1491F10A964006B566F /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FCC14C1F10A964006B566F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,8 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				2172DEEE1F11C12000E24B47 /* batman_chat_bg.png */,
-				21F5FA791F116E0D00281835 /* chicken.jpg */,
-				217C27EA1F118FE900C22D23 /* batman.jpg */,
+				2172DEF01F11C38A00E24B47 /* batman.jpg */,
+				2172DEF11F11C38A00E24B47 /* chicken.jpg */,
 				217C27E61F118A4500C22D23 /* robot.JPG */,
 				217C27F41F119E4200C22D23 /* batman.png */,
 				217C27F21F119DA300C22D23 /* MOOD-load-screen.png */,
@@ -179,6 +181,7 @@
 				21F5FA841F117A9C00281835 /* Explosion.swift */,
 				21FCC1561F10A964006B566F /* Assets.xcassets */,
 				21FCC1501F10A964006B566F /* Main.storyboard */,
+				2172DEF41F11C47300E24B47 /* MoviewShow.swift */,
 				21FCC1581F10A964006B566F /* LaunchScreen.storyboard */,
 				21FCC15B1F10A964006B566F /* Info.plist */,
 				21FCC1531F10A964006B566F /* Demo.xcdatamodeld */,
@@ -260,13 +263,13 @@
 				217C27E71F118A4500C22D23 /* robot.JPG in Resources */,
 				217C27D01F117AE700C22D23 /* frame_14_delay-0.06s.gif in Resources */,
 				217C27E21F117AE700C22D23 /* frame_8_delay-0.06s.gif in Resources */,
-				217C27EB1F118FE900C22D23 /* batman.jpg in Resources */,
 				217C27F51F119E4200C22D23 /* batman.png in Resources */,
 				217C27D51F117AE700C22D23 /* frame_19_delay-0.06s.gif in Resources */,
 				217C27CD1F117AE700C22D23 /* frame_11_delay-0.06s.gif in Resources */,
 				217C27E11F117AE700C22D23 /* frame_7_delay-0.06s.gif in Resources */,
 				217C27DC1F117AE700C22D23 /* frame_2_delay-0.06s.gif in Resources */,
 				217C27E31F117AE700C22D23 /* frame_9_delay-0.06s.gif in Resources */,
+				2172DEF31F11C38A00E24B47 /* chicken.jpg in Resources */,
 				217C27D71F117AE700C22D23 /* frame_20_delay-0.06s.gif in Resources */,
 				217C27D81F117AE700C22D23 /* frame_21_delay-0.06s.gif in Resources */,
 				217C27D61F117AE700C22D23 /* frame_1_delay-0.06s.gif in Resources */,
@@ -280,7 +283,7 @@
 				217C27DA1F117AE700C22D23 /* frame_23_delay-0.06s.gif in Resources */,
 				21FCC1521F10A964006B566F /* Main.storyboard in Resources */,
 				217C27CF1F117AE700C22D23 /* frame_13_delay-0.06s.gif in Resources */,
-				21F5FA7A1F116E0D00281835 /* chicken.jpg in Resources */,
+				2172DEF21F11C38A00E24B47 /* batman.jpg in Resources */,
 				217C27CB1F117AE700C22D23 /* frame_0_delay-0.06s.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +303,7 @@
 				21FCC14D1F10A964006B566F /* AppDelegate.swift in Sources */,
 				21FCC1641F10A97A006B566F /* SWRevealViewController.m in Sources */,
 				21FCC1681F10B6C4006B566F /* SlideOutCell.swift in Sources */,
+				2172DEF51F11C47300E24B47 /* MoviewShow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
