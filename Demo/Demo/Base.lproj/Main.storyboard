@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="W1E-6E-4jL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="w2j-Ax-JZE">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -39,6 +39,10 @@
                                 <rect key="frame" x="0.0" y="715" width="240" height="237"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frame_0_delay-0.06s.gif" translatesAutoresizingMaskIntoConstraints="NO" id="N11-ao-8E2">
+                                <rect key="frame" x="0.0" y="664" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -47,13 +51,14 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="explosion" destination="N11-ao-8E2" id="CCb-1P-iEW"/>
                         <outlet property="open" destination="Cus-kl-1jf" id="ALr-kF-5HL"/>
                         <outlet property="robot" destination="VE9-yz-Dta" id="b0y-OA-VdJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJa-ex-BKb" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="174" y="-752"/>
+            <point key="canvasLocation" x="173.59999999999999" y="-752.47376311844084"/>
         </scene>
         <!--Select Page-->
         <scene sceneID="pJ2-j2-q7x">
@@ -187,6 +192,34 @@
             </objects>
             <point key="canvasLocation" x="-631.20000000000005" y="-1629.5352323838083"/>
         </scene>
+        <!--Trailer Player-->
+        <scene sceneID="7pY-Av-9hh">
+            <objects>
+                <viewController id="w2j-Ax-JZE" customClass="TrailerPlayer" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BdP-q8-4pb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ibz-4I-HrT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="C5F-ts-5iU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CSD-i2-7C3" customClass="YouTubePlayerView" customModule="YouTubePlayer">
+                                <rect key="frame" x="0.0" y="28" width="375" height="227"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="videoView" destination="CSD-i2-7C3" id="ZIU-vW-NhN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dPz-DN-fV1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="988" y="-1466.7166416791606"/>
+        </scene>
         <!--Explosion-->
         <scene sceneID="aQt-Yc-Trp">
             <objects>
@@ -212,7 +245,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V0a-OW-sUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1004" y="-883"/>
+            <point key="canvasLocation" x="988" y="-752"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="UL0-uh-Fm7">

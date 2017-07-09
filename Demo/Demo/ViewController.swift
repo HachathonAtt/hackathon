@@ -20,6 +20,20 @@ class ViewController: UIViewController {
     private var stopStreamingCustom: ((Void) -> Void)? = nil
     private var captureSession: AVCaptureSession? = nil
     
+    @IBOutlet weak var explosion: UIImageView!
+    var count = 1
+    var timer = Timer()
+    
+    func animator() {
+        explosion.image = UIImage(named: "frame_\(count)_delay-0.06s.gif")
+        count += 1
+        print("count = ", count)
+        if(count == 23){
+            count = 1
+            self.explosion.center.y += 600
+            self.timer.invalidate()
+        }
+    }
 
     @IBOutlet weak var robot: UIImageView!
     @IBOutlet weak var open: UIBarButtonItem!
@@ -42,13 +56,23 @@ class ViewController: UIViewController {
         stt.recognizeMicrophone(settings: settings, failure: failure) { results in
             NSLog("recognized: " + results.bestTranscript)
             let text = results.bestTranscript
-            if text.contains("explosion") {
+            if text.contains("one") {
+                self.explosion.center.y -= 600
+                self.timer = Timer()
+                self.timer = Timer.scheduledTimer(timeInterval: 0.09, target: self, selector: #selector(Explosion.animator), userInfo: nil, repeats: true)
                 NSLog("user is interested in explosion movies")
             }
-//            self.inputToolbar.contentView.textView.text = results.bestTranscript
-//            self.sendButton.isEnabled = true
+            
+            if text.contains("two") {
+                self.explosion.center.y -= 600
+                self.timer = Timer()
+                self.timer = Timer.scheduledTimer(timeInterval: 0.09, target: self, selector: #selector(Explosion.animator), userInfo: nil, repeats: true)
+                NSLog("user is interested in explosion movies")
+            }
+            
+            
+            
             stt.stopRecognizeMicrophone()
-//            self.microphoneButton.isEnabled = true
         }
     }
 
@@ -73,7 +97,7 @@ class ViewController: UIViewController {
                             initialSpringVelocity: 0.1,
                             options: [], animations: {
             self.robot.center.y -= 400
-            ApiUtil.textToSpeech("Welcome to our app")
+            ApiUtil.textToSpeech("Welcome to our app, I'm batman")
         },completion:nil)
     }
 

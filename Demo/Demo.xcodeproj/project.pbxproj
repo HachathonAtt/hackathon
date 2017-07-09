@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		211618371F11C9C200BAFBEE /* batman_movie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 211618341F11C9C200BAFBEE /* batman_movie.jpg */; };
+		211618381F11C9C200BAFBEE /* transformers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 211618351F11C9C200BAFBEE /* transformers.jpg */; };
+		211618391F11C9C200BAFBEE /* wonderWoman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 211618361F11C9C200BAFBEE /* wonderWoman.jpg */; };
 		212C62CE1F11C5D60071A9AD /* batman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 212C62CC1F11C5D60071A9AD /* batman.jpg */; };
 		212C62CF1F11C5D60071A9AD /* chicken.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 212C62CD1F11C5D60071A9AD /* chicken.jpg */; };
 		2172DEEF1F11C12000E24B47 /* batman_chat_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2172DEEE1F11C12000E24B47 /* batman_chat_bg.png */; };
@@ -39,6 +42,7 @@
 		217C27E91F118B1700C22D23 /* SelectPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217C27E81F118B1700C22D23 /* SelectPage.swift */; };
 		217C27F31F119DA300C22D23 /* MOOD-load-screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 217C27F21F119DA300C22D23 /* MOOD-load-screen.png */; };
 		217C27F51F119E4200C22D23 /* batman.png in Resources */ = {isa = PBXBuildFile; fileRef = 217C27F41F119E4200C22D23 /* batman.png */; };
+		21E4C8FE1F11EDB600D780F7 /* TrailerPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E4C8FD1F11EDB600D780F7 /* TrailerPlayer.swift */; };
 		21F5FA851F117A9C00281835 /* Explosion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F5FA841F117A9C00281835 /* Explosion.swift */; };
 		21FCC14D1F10A964006B566F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FCC14C1F10A964006B566F /* AppDelegate.swift */; };
 		21FCC14F1F10A964006B566F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FCC14E1F10A964006B566F /* ViewController.swift */; };
@@ -66,6 +70,7 @@
 		359E18171F11AA1300D59681 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359E18081F11A89A00D59681 /* TextToSpeechV1.framework */; };
 		359E18181F11AA1300D59681 /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 359E18081F11A89A00D59681 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		359E181B1F11AA8400D59681 /* ApiUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359E181A1F11AA8400D59681 /* ApiUtil.swift */; };
+		8975E3648D0E70AC655A0273 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39223F256E4EE1946461750 /* Pods_Demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -86,6 +91,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		09364242DA44904363F0EAD9 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		211618341F11C9C200BAFBEE /* batman_movie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = batman_movie.jpg; sourceTree = "<group>"; };
+		211618351F11C9C200BAFBEE /* transformers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = transformers.jpg; sourceTree = "<group>"; };
+		211618361F11C9C200BAFBEE /* wonderWoman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wonderWoman.jpg; sourceTree = "<group>"; };
 		212C62CC1F11C5D60071A9AD /* batman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = batman.jpg; sourceTree = "<group>"; };
 		212C62CD1F11C5D60071A9AD /* chicken.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chicken.jpg; sourceTree = "<group>"; };
 		2172DEEE1F11C12000E24B47 /* batman_chat_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batman_chat_bg.png; sourceTree = "<group>"; };
@@ -118,6 +127,7 @@
 		217C27E81F118B1700C22D23 /* SelectPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPage.swift; sourceTree = "<group>"; };
 		217C27F21F119DA300C22D23 /* MOOD-load-screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOOD-load-screen.png"; sourceTree = "<group>"; };
 		217C27F41F119E4200C22D23 /* batman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batman.png; sourceTree = "<group>"; };
+		21E4C8FD1F11EDB600D780F7 /* TrailerPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrailerPlayer.swift; sourceTree = "<group>"; };
 		21F5FA841F117A9C00281835 /* Explosion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Explosion.swift; sourceTree = "<group>"; };
 		21FCC1491F10A964006B566F /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FCC14C1F10A964006B566F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +147,8 @@
 		359E18071F11A89A00D59681 /* SpeechToTextV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechToTextV1.framework; path = Frameworks/SpeechToTextV1.framework; sourceTree = "<group>"; };
 		359E18081F11A89A00D59681 /* TextToSpeechV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextToSpeechV1.framework; path = Frameworks/TextToSpeechV1.framework; sourceTree = "<group>"; };
 		359E181A1F11AA8400D59681 /* ApiUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiUtil.swift; sourceTree = "<group>"; };
+		57110DB45B5C8A435EFFA675 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		B39223F256E4EE1946461750 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +164,7 @@
 				359E180C1F11A89A00D59681 /* TextToSpeechV1.framework in Frameworks */,
 				359E18111F11AA1300D59681 /* ConversationV1.framework in Frameworks */,
 				359E18131F11AA1300D59681 /* RestKit.framework in Frameworks */,
+				8975E3648D0E70AC655A0273 /* Pods_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +174,9 @@
 		217C27B11F117AE700C22D23 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				211618341F11C9C200BAFBEE /* batman_movie.jpg */,
+				211618351F11C9C200BAFBEE /* transformers.jpg */,
+				211618361F11C9C200BAFBEE /* wonderWoman.jpg */,
 				212C62CC1F11C5D60071A9AD /* batman.jpg */,
 				212C62CD1F11C5D60071A9AD /* chicken.jpg */,
 				2172DEEE1F11C12000E24B47 /* batman_chat_bg.png */,
@@ -202,6 +218,7 @@
 				21FCC14B1F10A964006B566F /* Demo */,
 				21FCC14A1F10A964006B566F /* Products */,
 				359E18041F11A6F700D59681 /* Frameworks */,
+				B81CE2F6BBF5DE3463269266 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -224,6 +241,7 @@
 				21FCC1631F10A97A006B566F /* SWRevealViewController.m */,
 				21FCC14C1F10A964006B566F /* AppDelegate.swift */,
 				21FCC14E1F10A964006B566F /* ViewController.swift */,
+				21E4C8FD1F11EDB600D780F7 /* TrailerPlayer.swift */,
 				217C27E81F118B1700C22D23 /* SelectPage.swift */,
 				21F5FA841F117A9C00281835 /* Explosion.swift */,
 				21FCC1561F10A964006B566F /* Assets.xcassets */,
@@ -243,8 +261,18 @@
 				359E18061F11A89A00D59681 /* RestKit.framework */,
 				359E18071F11A89A00D59681 /* SpeechToTextV1.framework */,
 				359E18081F11A89A00D59681 /* TextToSpeechV1.framework */,
+				B39223F256E4EE1946461750 /* Pods_Demo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B81CE2F6BBF5DE3463269266 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57110DB45B5C8A435EFFA675 /* Pods-Demo.debug.xcconfig */,
+				09364242DA44904363F0EAD9 /* Pods-Demo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,10 +282,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21FCC15E1F10A964006B566F /* Build configuration list for PBXNativeTarget "Demo" */;
 			buildPhases = (
+				2716A47BBF453AFBCDFDAABB /* [CP] Check Pods Manifest.lock */,
 				21FCC1451F10A964006B566F /* Sources */,
 				21FCC1461F10A964006B566F /* Frameworks */,
 				21FCC1471F10A964006B566F /* Resources */,
 				359E18191F11AA1300D59681 /* Embed Frameworks */,
+				FADC4BAD44174A81415B1F63 /* [CP] Embed Pods Frameworks */,
+				D97AE4198A39C2D5A6955D7F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -329,6 +360,7 @@
 				217C27F51F119E4200C22D23 /* batman.png in Resources */,
 				217C27D51F117AE700C22D23 /* frame_19_delay-0.06s.gif in Resources */,
 				217C27CD1F117AE700C22D23 /* frame_11_delay-0.06s.gif in Resources */,
+				211618371F11C9C200BAFBEE /* batman_movie.jpg in Resources */,
 				217C27E11F117AE700C22D23 /* frame_7_delay-0.06s.gif in Resources */,
 				217C27DC1F117AE700C22D23 /* frame_2_delay-0.06s.gif in Resources */,
 				217C27E31F117AE700C22D23 /* frame_9_delay-0.06s.gif in Resources */,
@@ -337,6 +369,7 @@
 				217C27D61F117AE700C22D23 /* frame_1_delay-0.06s.gif in Resources */,
 				217C27D31F117AE700C22D23 /* frame_17_delay-0.06s.gif in Resources */,
 				217C27DF1F117AE700C22D23 /* frame_5_delay-0.06s.gif in Resources */,
+				211618381F11C9C200BAFBEE /* transformers.jpg in Resources */,
 				212C62CE1F11C5D60071A9AD /* batman.jpg in Resources */,
 				217C27DB1F117AE700C22D23 /* frame_24_delay-0.06s.gif in Resources */,
 				2172DEEF1F11C12000E24B47 /* batman_chat_bg.png in Resources */,
@@ -347,10 +380,59 @@
 				21FCC1521F10A964006B566F /* Main.storyboard in Resources */,
 				217C27CF1F117AE700C22D23 /* frame_13_delay-0.06s.gif in Resources */,
 				217C27CB1F117AE700C22D23 /* frame_0_delay-0.06s.gif in Resources */,
+				211618391F11C9C200BAFBEE /* wonderWoman.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2716A47BBF453AFBCDFDAABB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D97AE4198A39C2D5A6955D7F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FADC4BAD44174A81415B1F63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		21FCC1451F10A964006B566F /* Sources */ = {
@@ -359,6 +441,7 @@
 			files = (
 				217C27E91F118B1700C22D23 /* SelectPage.swift in Sources */,
 				21FCC1551F10A964006B566F /* Demo.xcdatamodeld in Sources */,
+				21E4C8FE1F11EDB600D780F7 /* TrailerPlayer.swift in Sources */,
 				359E181B1F11AA8400D59681 /* ApiUtil.swift in Sources */,
 				21F5FA851F117A9C00281835 /* Explosion.swift in Sources */,
 				21FCC14F1F10A964006B566F /* ViewController.swift in Sources */,
@@ -486,6 +569,7 @@
 		};
 		21FCC15F1F10A964006B566F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57110DB45B5C8A435EFFA675 /* Pods-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -507,6 +591,7 @@
 		};
 		21FCC1601F10A964006B566F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09364242DA44904363F0EAD9 /* Pods-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
