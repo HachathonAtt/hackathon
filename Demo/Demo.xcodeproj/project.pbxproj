@@ -37,6 +37,8 @@
 		217C27EB1F118FE900C22D23 /* batman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 217C27EA1F118FE900C22D23 /* batman.jpg */; };
 		217C27F31F119DA300C22D23 /* MOOD-load-screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 217C27F21F119DA300C22D23 /* MOOD-load-screen.png */; };
 		217C27F51F119E4200C22D23 /* batman.png in Resources */ = {isa = PBXBuildFile; fileRef = 217C27F41F119E4200C22D23 /* batman.png */; };
+		217C27F91F11AC8100C22D23 /* MovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217C27F81F11AC8100C22D23 /* MovieView.swift */; };
+		217C27FB1F11AD1B00C22D23 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217C27FA1F11AD1B00C22D23 /* MovieCell.swift */; };
 		21F5FA7A1F116E0D00281835 /* chicken.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21F5FA791F116E0D00281835 /* chicken.jpg */; };
 		21F5FA851F117A9C00281835 /* Explosion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F5FA841F117A9C00281835 /* Explosion.swift */; };
 		21FCC14D1F10A964006B566F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FCC14C1F10A964006B566F /* AppDelegate.swift */; };
@@ -76,12 +78,14 @@
 		217C27C81F117AE700C22D23 /* frame_7_delay-0.06s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "frame_7_delay-0.06s.gif"; sourceTree = "<group>"; };
 		217C27C91F117AE700C22D23 /* frame_8_delay-0.06s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "frame_8_delay-0.06s.gif"; sourceTree = "<group>"; };
 		217C27CA1F117AE700C22D23 /* frame_9_delay-0.06s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "frame_9_delay-0.06s.gif"; sourceTree = "<group>"; };
-		217C27E61F118A4500C22D23 /* robot.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = robot.JPG; sourceTree = "<group>"; };
+		217C27E61F118A4500C22D23 /* robot.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = robot.JPG; path = ../robot.JPG; sourceTree = "<group>"; };
 		217C27E81F118B1700C22D23 /* SelectPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPage.swift; sourceTree = "<group>"; };
-		217C27EA1F118FE900C22D23 /* batman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = batman.jpg; sourceTree = "<group>"; };
+		217C27EA1F118FE900C22D23 /* batman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = batman.jpg; path = ../batman.jpg; sourceTree = "<group>"; };
 		217C27F21F119DA300C22D23 /* MOOD-load-screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOOD-load-screen.png"; sourceTree = "<group>"; };
 		217C27F41F119E4200C22D23 /* batman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batman.png; sourceTree = "<group>"; };
-		21F5FA791F116E0D00281835 /* chicken.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chicken.jpg; sourceTree = "<group>"; };
+		217C27F81F11AC8100C22D23 /* MovieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieView.swift; path = ../MovieView.swift; sourceTree = "<group>"; };
+		217C27FA1F11AD1B00C22D23 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieCell.swift; path = ../MovieCell.swift; sourceTree = "<group>"; };
+		21F5FA791F116E0D00281835 /* chicken.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = chicken.jpg; path = ../chicken.jpg; sourceTree = "<group>"; };
 		21F5FA841F117A9C00281835 /* Explosion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Explosion.swift; sourceTree = "<group>"; };
 		21FCC1491F10A964006B566F /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FCC14C1F10A964006B566F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +116,9 @@
 		217C27B11F117AE700C22D23 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				21F5FA791F116E0D00281835 /* chicken.jpg */,
+				217C27EA1F118FE900C22D23 /* batman.jpg */,
+				217C27E61F118A4500C22D23 /* robot.JPG */,
 				217C27F41F119E4200C22D23 /* batman.png */,
 				217C27F21F119DA300C22D23 /* MOOD-load-screen.png */,
 				217C27B21F117AE700C22D23 /* frame_0_delay-0.06s.gif */,
@@ -163,19 +170,18 @@
 			isa = PBXGroup;
 			children = (
 				217C27B11F117AE700C22D23 /* img */,
-				21F5FA791F116E0D00281835 /* chicken.jpg */,
-				217C27EA1F118FE900C22D23 /* batman.jpg */,
-				217C27E61F118A4500C22D23 /* robot.JPG */,
 				21FCC16B1F10BB84006B566F /* NavTable.swift */,
 				21FCC1671F10B6C4006B566F /* SlideOutCell.swift */,
 				21FCC1621F10A97A006B566F /* SWRevealViewController.h */,
 				21FCC1631F10A97A006B566F /* SWRevealViewController.m */,
 				21FCC14C1F10A964006B566F /* AppDelegate.swift */,
 				21FCC14E1F10A964006B566F /* ViewController.swift */,
-				21FCC1501F10A964006B566F /* Main.storyboard */,
 				217C27E81F118B1700C22D23 /* SelectPage.swift */,
 				21F5FA841F117A9C00281835 /* Explosion.swift */,
+				217C27F81F11AC8100C22D23 /* MovieView.swift */,
+				217C27FA1F11AD1B00C22D23 /* MovieCell.swift */,
 				21FCC1561F10A964006B566F /* Assets.xcassets */,
+				21FCC1501F10A964006B566F /* Main.storyboard */,
 				21FCC1581F10A964006B566F /* LaunchScreen.storyboard */,
 				21FCC15B1F10A964006B566F /* Info.plist */,
 				21FCC1531F10A964006B566F /* Demo.xcdatamodeld */,
@@ -289,12 +295,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				217C27E91F118B1700C22D23 /* SelectPage.swift in Sources */,
+				217C27F91F11AC8100C22D23 /* MovieView.swift in Sources */,
 				21FCC1551F10A964006B566F /* Demo.xcdatamodeld in Sources */,
 				21F5FA851F117A9C00281835 /* Explosion.swift in Sources */,
 				21FCC14F1F10A964006B566F /* ViewController.swift in Sources */,
 				21FCC16C1F10BB84006B566F /* NavTable.swift in Sources */,
 				21FCC14D1F10A964006B566F /* AppDelegate.swift in Sources */,
 				21FCC1641F10A97A006B566F /* SWRevealViewController.m in Sources */,
+				217C27FB1F11AD1B00C22D23 /* MovieCell.swift in Sources */,
 				21FCC1681F10B6C4006B566F /* SlideOutCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

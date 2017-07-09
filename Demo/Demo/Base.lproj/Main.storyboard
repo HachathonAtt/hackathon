@@ -48,7 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJa-ex-BKb" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="181.59999999999999" y="-819.04047976011998"/>
+            <point key="canvasLocation" x="174" y="-752"/>
         </scene>
         <!--Select Page-->
         <scene sceneID="pJ2-j2-q7x">
@@ -136,8 +136,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcZ-aU-MAR">
-                                            <rect key="frame" x="39" y="0.0" width="116" height="50"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Talk With Robot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcZ-aU-MAR">
+                                            <rect key="frame" x="39" y="0.0" width="135" height="50"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                             <nil key="textColor"/>
@@ -157,8 +157,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="78.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Second page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nR-EU-uYQ">
-                                            <rect key="frame" x="38" y="0.0" width="116" height="50"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Another Robot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nR-EU-uYQ">
+                                            <rect key="frame" x="38" y="0.0" width="182" height="50"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                             <nil key="textColor"/>
@@ -168,7 +168,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="secondPageLabel" destination="1nR-EU-uYQ" id="pr5-wg-QZc"/>
-                                    <segue destination="whh-hb-fzp" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="T9l-J8-bxK"/>
+                                    <segue destination="W1E-6E-4jL" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="vrn-p3-tMP"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -181,6 +181,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LsS-LT-EOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-631.20000000000005" y="-1629.5352323838083"/>
+        </scene>
+        <!--Movie-->
+        <scene sceneID="90b-eN-ksK">
+            <objects>
+                <tableViewController id="ekU-Ht-5Ne" customClass="Movie" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="122" sectionHeaderHeight="28" sectionFooterHeight="28" id="YAJ-TY-aFs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieImg" rowHeight="122" id="EOI-VK-lnQ" customClass="MovieCell" customModule="Demo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="122"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EOI-VK-lnQ" id="UEu-JQ-AnG">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="121.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8EN-6f-hU0">
+                                            <rect key="frame" x="0.0" y="8" width="375" height="128"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ekU-Ht-5Ne" id="JQg-ta-7e2"/>
+                            <outlet property="delegate" destination="ekU-Ht-5Ne" id="ic5-27-IGG"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KUD-oB-5pR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636" y="-1665.5172413793105"/>
         </scene>
         <!--Explosion-->
         <scene sceneID="aQt-Yc-Trp">
@@ -207,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V0a-OW-sUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="240.80000000000001" y="-1630.4347826086957"/>
+            <point key="canvasLocation" x="1004" y="-883"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="UL0-uh-Fm7">
@@ -230,7 +264,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ynU-wf-1uo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1423" y="-1167"/>
+            <point key="canvasLocation" x="-1428" y="-955"/>
         </scene>
     </scenes>
     <resources>
