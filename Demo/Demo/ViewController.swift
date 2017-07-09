@@ -41,6 +41,10 @@ class ViewController: UIViewController {
         let failure = { (error: Error) in print(error) }
         stt.recognizeMicrophone(settings: settings, failure: failure) { results in
             NSLog("recognized: " + results.bestTranscript)
+            let text = results.bestTranscript
+            if text.contains("explosion") {
+                NSLog("user is interested in explosion movies")
+            }
 //            self.inputToolbar.contentView.textView.text = results.bestTranscript
 //            self.sendButton.isEnabled = true
             stt.stopRecognizeMicrophone()
