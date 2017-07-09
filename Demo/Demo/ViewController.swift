@@ -54,25 +54,25 @@ class ViewController: UIViewController {
         }
         let failure = { (error: Error) in print(error) }
         stt.recognizeMicrophone(settings: settings, failure: failure) { results in
-            NSLog("recognized: " + results.bestTranscript)
             let text = results.bestTranscript
-            if text.contains("one") {
+            let isFinal = results.results[0].final
+            if isFinal {
+                NSLog("recognized: " + results.bestTranscript + " " + String(isFinal))
+                stt.stopRecognizeMicrophone()
+            }
+            if isFinal && text.contains("one") {
                 self.explosion.center.y -= 600
                 self.timer = Timer()
                 self.timer = Timer.scheduledTimer(timeInterval: 0.09, target: self, selector: #selector(Explosion.animator), userInfo: nil, repeats: true)
                 NSLog("user is interested in explosion movies")
             }
             
-            if text.contains("two") {
+            if isFinal && text.contains("two") {
                 self.explosion.center.y -= 600
                 self.timer = Timer()
                 self.timer = Timer.scheduledTimer(timeInterval: 0.09, target: self, selector: #selector(Explosion.animator), userInfo: nil, repeats: true)
                 NSLog("user is interested in explosion movies")
             }
-            
-            
-            
-            stt.stopRecognizeMicrophone()
         }
     }
 
