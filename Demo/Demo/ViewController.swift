@@ -5,10 +5,11 @@
 //  Created by Chengyu_Ovaltine on 7/7/17.
 //  Copyright © 2017 Chengyu_Ovaltine. All rights reserved.
 //
-
 import UIKit
 import SpeechToTextV1
 import AVFoundation
+import Alamofire
+import SwiftyJSON
 
 class ViewController: UIViewController {
     // Watson Speech to Text Variables
@@ -21,6 +22,12 @@ class ViewController: UIViewController {
     private var captureSession: AVCaptureSession? = nil
     
     @IBOutlet weak var explosion: UIImageView!
+    @IBOutlet weak var poster: UIButton!
+    
+    @IBAction func profileClick(_ sender: Any) {
+        performSegue(withIdentifier: "trailer", sender: nil)
+    }
+    
     var count = 1
     var timer = Timer()
     
@@ -34,7 +41,7 @@ class ViewController: UIViewController {
             self.timer.invalidate()
         }
     }
-
+    
     @IBOutlet weak var robot: UIImageView!
     @IBOutlet weak var open: UIBarButtonItem!
     
@@ -42,6 +49,8 @@ class ViewController: UIViewController {
         NSLog("record item menu pressed")
         startStreaming()
     }
+    
+    
     private func startStreaming() {
         var settings = RecognitionSettings(contentType: .opus)
         settings.continuous = false
@@ -67,18 +76,59 @@ class ViewController: UIViewController {
                 NSLog("user is interested in explosion movies")
             }
             
-            if isFinal && text.contains("two") {
-                self.explosion.center.y -= 600
-                self.timer = Timer()
-                self.timer = Timer.scheduledTimer(timeInterval: 0.09, target: self, selector: #selector(Explosion.animator), userInfo: nil, repeats: true)
-                NSLog("user is interested in explosion movies")
+            else if isFinal && text.contains("Batman"){
+                Alamofire.request("http://10.64.3.5:8888/search/batman").responseJSON { response in
+                    
+                    if let resultValue = response.result.value {
+                        
+                        let jsonRes = JSON(resultValue)
+                        if let url = NSURL(string: jsonRes["img_link"].rawString()!){
+                            if let data = NSData(contentsOf: url as URL){
+                                self.poster.setImage(UIImage(data: data as Data), for: .normal)
+                            }
+                        }
+                        MyGlobal.movieTrailer = jsonRes["trailer_link"].rawString()!
+                        
+                        self.poster.isHidden = false
+                    }
+                    
+                }
             }
+                
+            else if isFinal && text.contains("Superman"){
+                Alamofire.request("http://10.64.3.5:8888/search/superman").responseJSON { response in
+                    
+                    if let resultValue = response.result.value {
+                        
+                        let jsonRes = JSON(resultValue)
+                        if let url = NSURL(string: jsonRes["img_link"].rawString()!){
+                            if let data = NSData(contentsOf: url as URL){
+                                self.poster.setImage(UIImage(data: data as Data), for: .normal)
+                            }
+                        }
+                        MyGlobal.movieTrailer = jsonRes["trailer_link"].rawString()!
+                        
+                        self.poster.isHidden = false
+                    }
+                    
+                }
+            }
+            
+                
+            else{
+                if isFinal{
+                    ApiUtil.textToSpeech("My lord, I couldn't recognize your words")
+                }
+                
+            }
+            
         }
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        poster.isHidden = true
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "batman_chat_bg.png")!)
         
         robot.image = UIImage(named: MyGlobal.selectedImg)
@@ -96,31 +146,30 @@ class ViewController: UIViewController {
                             usingSpringWithDamping: 0.67,
                             initialSpringVelocity: 0.1,
                             options: [], animations: {
-            self.robot.center.y -= 400
-            ApiUtil.textToSpeech("Welcome to our app, I'm batman")
+                                self.robot.center.y -= 400
+                                ApiUtil.textToSpeech("Welcome to our app, I'm batman")
         },completion:nil)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-//    private func launchAnimation() {
-//        let vc = UIStoryboard(name: "LaunchScreen", bundle: nil).instantiateViewController(withIdentifier: "launch")
-//        let launchview = vc.view
-//        let delegate = UIApplication.shared.delegate
-//        let mainWindow = delegate?.window
-//        mainWindow!!.addSubview(launchview!)
-//        
-//        UIView.animate(withDuration: 1, delay: 0.5, options: .beginFromCurrentState,
-//                                       animations: {
-//                                        launchview?.alpha = 0.0
-//                                        launchview?.layer.transform = CATransform3DScale(CATransform3DIdentity, 1.5, 1.5, 1.0)
-//            }) { (finished) in
-//                launchview?.removeFromSuperview()
-//            }
-//    }
-
-
+    //    private func launchAnimation() {
+    //        let vc = UIStoryboard(name: "LaunchScreen", bundle: nil).instantiateViewController(withIdentifier: "launch")
+    //        let launchview = vc.view
+    //        let delegate = UIApplication.shared.delegate
+    //        let mainWindow = delegate?.window
+    //        mainWindow!!.addSubview(launchview!)
+    //
+    //        UIView.animate(withDuration: 1, delay: 0.5, options: .beginFromCurrentState,
+    //                                       animations: {
+    //                                        launchview?.alpha = 0.0
+    //                                        launchview?.layer.transform = CATransform3DScale(CATransform3DIdentity, 1.5, 1.5, 1.0)
+    //            }) { (finished) in
+    //                launchview?.removeFromSuperview()
+    //            }
+    //    }
+    
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="w2j-Ax-JZE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="W1E-6E-4jL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -43,6 +43,14 @@
                                 <rect key="frame" x="0.0" y="664" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJx-Vq-UBO">
+                                <rect key="frame" x="16" y="87" width="343" height="263"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="chicken.jpg"/>
+                                <connections>
+                                    <action selector="profileClick:" destination="WZx-Vj-ly5" eventType="touchUpInside" id="MAp-e9-4Nl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -53,7 +61,9 @@
                     <connections>
                         <outlet property="explosion" destination="N11-ao-8E2" id="CCb-1P-iEW"/>
                         <outlet property="open" destination="Cus-kl-1jf" id="ALr-kF-5HL"/>
+                        <outlet property="poster" destination="XJx-Vq-UBO" id="aXb-rJ-m9o"/>
                         <outlet property="robot" destination="VE9-yz-Dta" id="b0y-OA-VdJ"/>
+                        <segue destination="w2j-Ax-JZE" kind="show" identifier="trailer" id="BtY-cF-jTb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJa-ex-BKb" sceneMemberID="firstResponder"/>
@@ -205,10 +215,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CSD-i2-7C3" customClass="YouTubePlayerView" customModule="YouTubePlayer">
-                                <rect key="frame" x="0.0" y="28" width="375" height="227"/>
+                                <rect key="frame" x="0.0" y="134" width="375" height="227"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ipn-xo-B9P">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="tOk-Be-dNJ">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="E5z-ag-1E2">
+                                            <connections>
+                                                <segue destination="WZx-Vj-ly5" kind="show" id="Pre-qM-Q68"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -279,6 +302,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="xpO-vX-Mcx"/>
-        <segue reference="5z0-1F-l8k"/>
+        <segue reference="Pre-qM-Q68"/>
     </inferredMetricsTieBreakers>
 </document>

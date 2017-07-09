@@ -10,6 +10,7 @@ import UIKit
 
 struct MyGlobal {
     static var selectedImg = "chicken.jpg";
+    static var movieTrailer = "http://i1.wp.com/image.tmdb.org/t/p/w600/kBf3g9crrADGMc2AMAMlLBgSm2h.jpg";
 }
 
 class SelectPage: UIViewController {

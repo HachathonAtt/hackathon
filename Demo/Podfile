@@ -9,5 +9,6 @@ target 'Demo' do
   # Pods for HW9
 pod 'EasyToast'
 pod 'YouTubePlayer'
-
+pod 'SwiftyJSON'
+pod 'Alamofire', '~> 4.4'
 end

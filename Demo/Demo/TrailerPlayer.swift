@@ -14,7 +14,8 @@ class TrailerPlayer: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        videoView.loadVideoID("5Eyw-Qiwpj0")
+//        print("GhBWBrQ01OQ")
+        videoView.loadVideoID(MyGlobal.movieTrailer)
         // Do any additional setup after loading the view.
     }
 
