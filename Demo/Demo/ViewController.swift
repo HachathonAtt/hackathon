@@ -160,8 +160,8 @@ class ViewController: UIViewController {
             open.action = #selector(SWRevealViewController.revealToggle(_:))
             view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         }
-        let user = "ee02e3e5-3eb2-465a-8950-d0554d5c0d38"
-        let password = "FBQSTGVRKLrK"
+        let user = "d4db7859-8d66-4e01-ae95-572f1436927b"
+        let password = "VfeLSZmUqHDu"
         stt = SpeechToText(username: user, password: password)
         
         UIImageView.animate(withDuration: 2, delay: 0.5,
